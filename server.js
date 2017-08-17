@@ -63,6 +63,13 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  // render template you set up as your view engine
+  res.render('projects.hbs', {
+    pageTitle: 'Projects',
+  });
+});
+
 app.get('/help', (req, res) => {
   // render template you set up as your view engine
   res.render('help.hbs', {
